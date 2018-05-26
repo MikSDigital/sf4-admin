@@ -13,3 +13,11 @@ Symfony 4 starter kit with this set up:
 
 * password reminder
 * logging user just after registration
+
+
+Similar repositories:
+* https://github.com/vonLeebpl/BasicWithGentelella
+* https://github.com/krzysiekpiasecki/Gentelella
+* https://github.com/FlorientR/laravel-gentelella
+* https://github.com/afourmy/flask-gentelella
+* https://github.com/yiister/yii2-gentelella
