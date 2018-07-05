@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Manufacturer{% endblock %}
+
+{% block page_content %}
+    <h1>Manufacturer</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ manufacturer.id }}</td>
+            </tr>
+            <tr>
+                <th>Slug</th>
+                <td>{{ manufacturer.slug }}</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{ manufacturer.name }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ manufacturer.description }}</td>
+            </tr>
+            <tr>
+                <th>MetaKeys</th>
+                <td>{{ manufacturer.metaKeys }}</td>
+            </tr>
+            <tr>
+                <th>MetaDescription</th>
+                <td>{{ manufacturer.metaDescription }}</td>
+            </tr>
+            <tr>
+                <th>DateCreated</th>
+                <td>{{ manufacturer.dateCreated ? manufacturer.dateCreated|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>DateUpdated</th>
+                <td>{{ manufacturer.dateUpdated ? manufacturer.dateUpdated|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Path</th>
+                <td>{{ manufacturer.path }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('manufacturer_index') }}">back to list</a>
+
+    <a href="{{ path('manufacturer_edit', {'id': manufacturer.id}) }}">edit</a>
+
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="{{ path('manufacturer_index') }}">
+                {{ 'Back to the list'|trans }}
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="{{ path('manufacturer_edit', {'id': manufacturer.id}) }}">
+                {{ 'Edit'|trans }}
+            </a>
+        </li>
+        <li class="list-group-item">
+            {{ include('admin/pages/manufacturer/_delete_form.html.twig') }}
+        </li>
+    </ul>
+
+
+
+
+{% endblock %}

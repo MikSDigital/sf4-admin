@@ -68,8 +68,17 @@
     "egulias/email-validator": {
         "version": "2.1.4"
     },
+    "enhavo/grid-bundle": {
+        "version": "dev-master"
+    },
+    "enhavo/media-bundle": {
+        "version": "dev-master"
+    },
     "fig/link-util": {
         "version": "1.0.0"
+    },
+    "friendsofsymfony/ckeditor-bundle": {
+        "version": "1.1.0"
     },
     "friendsofsymfony/user-bundle": {
         "version": "v2.1.2"
@@ -88,6 +97,15 @@
     },
     "ocramius/proxy-manager": {
         "version": "2.2.0"
+    },
+    "oneup/uploader-bundle": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.0",
+            "ref": "b19678d1535b9fe7cdf4647fd3483455e4fca458"
+        }
     },
     "paragonie/random_compat": {
         "version": "v2.0.12"

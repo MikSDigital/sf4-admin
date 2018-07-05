@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Manufacturer index{% endblock %}
+
+{% block page_content %}
+    <h1>Manufacturer index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Slug</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>MetaKeys</th>
+                <th>MetaDescription</th>
+                <th>DateCreated</th>
+                <th>DateUpdated</th>
+                <th>Path</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for manufacturer in manufacturers %}
+            <tr>
+                <td>{{ manufacturer.id }}</td>
+                <td>{{ manufacturer.slug }}</td>
+                <td>{{ manufacturer.name }}</td>
+                <td>{{ manufacturer.description|slice(0,70) }}...</td>
+                <td>{{ manufacturer.metaKeys }}</td>
+                <td>{{ manufacturer.metaDescription }}</td>
+                <td>{{ manufacturer.dateCreated ? manufacturer.dateCreated|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ manufacturer.dateUpdated ? manufacturer.dateUpdated|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{% if manufacturer.path %}
+                        <a class="fancybox" rel="group" href="{{ asset(('uploads/images/' ~ manufacturer.path)) }}">
+                            <img src="{{ asset( ('uploads/images/' ~ manufacturer.path)) }}"/>
+                        </a>
+                    {% else %}
+                        {{ 'no photos'|trans }}
+                    {% endif %}</td>
+                <td>
+                    <a href="{{ path('manufacturer_show', {'id': manufacturer.id}) }}">show</a>
+                    <a href="{{ path('manufacturer_edit', {'id': manufacturer.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('manufacturer_new') }}">Create new</a>
+{% endblock %}

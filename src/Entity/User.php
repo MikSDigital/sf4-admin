@@ -31,4 +31,9 @@ class User extends BaseUser
 
         return parent::setEmail($email);
     }
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
 }

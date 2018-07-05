@@ -11,6 +11,8 @@
     <!-- JQVMap -->
     <link href="{{ asset('assets/vendors/jqvmap/dist/jqvmap.min.css') }}" rel="stylesheet"/>
 
+    <link href="{{ asset('assets/vendors/dropzone/dist/dropzone.css') }}" rel="stylesheet"/>
+
 {% endblock stylesheets %}
 
 {% block top_content_header %}{% endblock top_content_header%}
@@ -706,6 +708,12 @@
         </div>
     </div>
     <!-- /page content -->
+
+
+    <div class="row">
+        <form action="{{ oneup_uploader_endpoint('gallery') }}" class="dropzone" style="height:200px; border:4px dashed black">
+        </form>
+    </div>
 
 {% endblock %}
 
