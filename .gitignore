@@ -3,6 +3,7 @@
 /.env
 /public/bundles/
 /var/
+/var/data/
 /vendor/
 ###< symfony/framework-bundle ###
 
@@ -25,7 +26,6 @@ yarn-error.log
 .idea
 .idea/
 .idea/*
-
 
 # Created by https://www.gitignore.io/api/phpstorm
 

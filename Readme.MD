@@ -6,8 +6,10 @@ Symfony 4 starter kit with this set up:
 * very basic [Gentelella](https://github.com/puikinsh/gentelella) admin template set up
 
 1. Clone this repo
-2. Set up DB
+2. Set up **sqlite** DB
 3. Run migrations
+4. Create admin : ```php bin/console fos:user:create```
+5. Promote just created admin: ```php bin/console fos:user:promote``` with ***ROLE_ADMIN***
 
 ##### ToDo:
 
