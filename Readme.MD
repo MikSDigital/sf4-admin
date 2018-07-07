@@ -7,7 +7,7 @@ Symfony 4 starter kit with this set up:
 
 1. Clone this repo
 2. Set up DB
-3. Run migration
+3. Run migrations
 
 ##### ToDo:
 

@@ -8,7 +8,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
- * @UniqueEntity(fields={"email"}, message="It looks like you already have an account!")
+ * @UniqueEntity(fields={"email"}, message="This email exists!")
  */
 class User extends BaseUser
 {
