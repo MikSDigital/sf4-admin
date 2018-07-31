@@ -28,7 +28,7 @@ class AdminController extends Controller
     }
 
     /**
-     * @Route("/", name="app_dashboard")
+     * @Route("/", name="admin_index")
      *
      * @param Request $request Request
      *
