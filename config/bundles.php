@@ -15,8 +15,4 @@ return [
     Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
     Symfony\Bundle\WebServerBundle\WebServerBundle::class => ['dev' => true],
     FOS\UserBundle\FOSUserBundle::class => ['all' => true],
-    FOS\CKEditorBundle\FOSCKEditorBundle::class => ['all' => true],
-    Oneup\UploaderBundle\OneupUploaderBundle::class => ['all' => true],
-//    Enhavo\Bundle\MediaBundle\EnhavoMediaBundle::class => ['all' => true],
-//    Enhavo\Bundle\GridBundle\EnhavoGridBundle::class => ['all' => true]
 ];
