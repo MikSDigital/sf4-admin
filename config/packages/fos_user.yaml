@@ -10,3 +10,8 @@ fos_user:
         form:
             name: my_app_user_registration
             type: App\Form\RegistrationFormType
+        confirmation:
+            enabled: true
+            from_email:
+                address: my_username@gmail.com
+                sender_name: Demo registration
