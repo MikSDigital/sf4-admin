@@ -11,7 +11,7 @@ fos_user:
             name: my_app_user_registration
             type: App\Form\RegistrationFormType
         confirmation:
-            enabled: true
+            enabled: false
             from_email:
                 address: my_username@gmail.com
                 sender_name: Demo registration
