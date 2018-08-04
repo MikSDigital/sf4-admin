@@ -2,6 +2,7 @@ Symfony 4 starter kit with this set up:
 
 * FOSUser Bundle
 * guard authenticator
+* login after registration
 * registartion and login form templates
 * ```php bin/console doctrine:schema:validate``` passed
 * very basic [Gentelella](https://github.com/puikinsh/gentelella) admin template set up
